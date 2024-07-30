@@ -2,17 +2,21 @@ import './index.css';
 
 import { ApolloProvider } from '@apollo/client';
 import App from './screens/home/App';
+import { MockedProvider } from '@apollo/client/testing';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { client } from './utility/apolloClient';
+import { mocks } from './utility/queries';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  {/* <MockedProvider mocks={mocks} addTypename={false}> */}
    <ApolloProvider client={client}>
     <App />
    </ApolloProvider>
+  {/* </MockedProvider> */}
   </React.StrictMode>
 );
 

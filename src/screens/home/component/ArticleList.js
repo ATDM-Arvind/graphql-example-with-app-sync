@@ -1,6 +1,5 @@
-import { GET_CHANNELS, GET_LOCATIONS } from '../../../utility/queries'; // Ensure this is the correct path to your query
-
-import { ListItem } from './ListItem';
+import { GET_LOCATIONS } from '../../../utility/queries'; // Ensure this is the correct path to your query
+import { ListItem } from './ArticleItem';
 import React from 'react';
 import { useQuery } from '@apollo/client';
 
@@ -9,7 +8,7 @@ const ChannelsList = () => {
 
   if (loading) return <p>Loading ...</p>;
   if (error) return <p>{error.message}</p>;
-
+console.log(data)
   return (
     <ul>
       {data.locations.map((ch) => (
