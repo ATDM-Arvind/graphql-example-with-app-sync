@@ -17,10 +17,11 @@ function App() {
         <p>
           Welcome to Apollo Client with React JS.
         </p>
-        {/* <MockedProvider mocks={mocks} addTypename={false}> */}
-            <ChannelsList />
-        {/* </MockedProvider> */}
+       
       </header>
+       {/* <MockedProvider mocks={mocks} addTypename={false}> */}
+       <ChannelsList />
+        {/* </MockedProvider> */}
     </div>
   );
 }
