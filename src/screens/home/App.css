@@ -22,6 +22,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .App-link {
@@ -36,13 +37,7 @@
     transform: rotate(360deg);
   }
 }
-.List-Item {
-  background-color:antiquewhite;
-  border: #282c34;
-  border-radius: 5px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 20px;
+ul {
+  list-style-type: none;
+  padding: 0;
 }

@@ -1,4 +1,24 @@
+.container {
+    background-color:antiquewhite;
+    border: #282c34;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .left-view{
+    display: flex;
+    flex-direction:column;
+  }
 .userName{
     font-size: 25px;
     font-weight: bold;
+}
+
+.delete-icon{
+    height: 30px;
 }

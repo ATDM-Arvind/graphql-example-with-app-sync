@@ -1,5 +1,15 @@
 import { gql } from '@apollo/client';
 
+export const ADD_USER= gql`
+mutation createUsers($createusersinput: CreateUsersInput!) {
+  createUsers(input: $createusersinput) {
+    Id
+    name
+    city
+  }
+}`
+
+
 export const GET_USERS = gql`
 query getUsers {
   listUsers {
@@ -13,6 +23,13 @@ query getUsers {
 `;
 
 
+export const DELETE_USER = gql`
+  mutation deleteUsers($deleteusersinput: DeleteUsersInput!) {
+    deleteUsers(input: $deleteusersinput) {
+      Id
+    }
+  }
+`;
 // Define the mock responses
 export const mocks = [
   {

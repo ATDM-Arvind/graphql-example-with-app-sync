@@ -13,7 +13,7 @@ console.log(data)
     <ul>
       {data.listUsers.items.map((item) => (
         <li key={item.id}> 
-        <ListItem name={item.name} city={item.city}/></li>
+        <ListItem id={item.Id} name={item.name} city={item.city}/></li>
       ))}
     </ul>
   );

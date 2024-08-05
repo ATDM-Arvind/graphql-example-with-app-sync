@@ -1,5 +1,6 @@
 import './App.css';
 
+import AddUser from './component/AddUser';
 import UserList from './component/UserList';
 import logo from '../../assets/logo.svg';
 import logoApollo from '../../assets/apolo.png';
@@ -16,6 +17,7 @@ function App() {
           Welcome to Apollo Client with React JS.
         </p>
       </header>
+      <AddUser/>
       <UserList />
     </div>
   );
