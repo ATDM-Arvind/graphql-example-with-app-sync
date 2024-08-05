@@ -1,21 +1,23 @@
 import { gql } from '@apollo/client';
 
-export const GET_LOCATIONS = gql`
-  query GetLocations {
-    locations {
-      id
+export const GET_USERS = gql`
+query getUsers {
+  listUsers {
+    items {
+      Id
       name
-      description
-      photo
+      city
     }
   }
+}
 `;
+
 
 // Define the mock responses
 export const mocks = [
   {
     request: {
-      query: GET_LOCATIONS,
+      query: GET_USERS,
     },
     result: {
       data: {

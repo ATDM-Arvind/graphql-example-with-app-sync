@@ -1,6 +1,6 @@
 import './App.css';
 
-import ChannelsList from './component/ArticleList';
+import UserList from './component/UserList';
 import logo from '../../assets/logo.svg';
 import logoApollo from '../../assets/apolo.png';
 
@@ -16,7 +16,7 @@ function App() {
           Welcome to Apollo Client with React JS.
         </p>
       </header>
-      <ChannelsList />
+      <UserList />
     </div>
   );
 }
