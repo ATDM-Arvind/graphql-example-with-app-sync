@@ -26,7 +26,7 @@ export const ListItem = ({id,name,city})=>{
                 <label style={{textAlign:'left'}}>{city}</label>
             </div>
           <div>
-                <img  className='delete-icon' src={deleteIcon} onClick={deleteUserHandle}/>
+                <img  className='delete-icon' src={deleteIcon} onClick={deleteUserHandle} alt="delete-img"/>
           </div>
             
         </div>
