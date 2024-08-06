@@ -14,7 +14,7 @@ function App() {
         <img src={logoApollo} className="App-logo" alt="logo" />
         </div>
         <p>
-          Welcome to Apollo Client with React JS.
+          Welcome to Apollo Client with React JS Updated.
         </p>
       </header>
       <AddUser/>
