@@ -7,7 +7,7 @@ import { useMutation } from '@apollo/client';
 
 export const ListItem = ({id,name,city})=>{
 
-    const [deleteUser, { data: deleteData, loading: deleteLoading, error: deleteError }] = useMutation(DELETE_USER, {
+    const [deleteUser] = useMutation(DELETE_USER, {
         refetchQueries: [{ query: GET_USERS }]
     });
 
